@@ -32,7 +32,7 @@ class ViewController: UIViewController {
                     self.secondPassed += 1
                     let percentageProgress = Float(self.secondPassed)/Float(totalTime)
                     let percent = percentageProgress*100
-                    let status = NSString(format: "%.2f", percent)
+                    let status = String(format: "%.2f", percent)
                     self.statusLabel.text = status as String+"%"
                     self.progressBar.progress = percentageProgress
                 } else {
